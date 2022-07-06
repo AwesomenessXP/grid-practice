@@ -89,7 +89,7 @@
 .container-3 {
     margin-top: 30px;
     display: inline-grid;
-    grid-template: 100px 100px 500px 100px / 200px 700px;
+    grid-template: 1fr 1fr 5fr 1fr / 2fr 7fr;
     /* remember: 2 columns, 4 rows */
     grid-template-areas: "header header"
                          "sidebar nav"
@@ -112,6 +112,7 @@
 
 #article {
     grid-area: article;
+    padding: 10px;
 }
 
 #footer {
@@ -126,7 +127,7 @@
     gap: 10px;
 }
 
-
+/* using auto-fit makes the grid responsive without media queries!!  */
 
 .item-cont4 {
     box-shadow: 0px 0px 4px 4px rgb(197, 70, 255);
@@ -148,5 +149,4 @@
 #four {
     background-color: rgb(247,189,0);
 }
-
 
