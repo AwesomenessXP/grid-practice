@@ -1,0 +1,143 @@
+.container-3 {
+    display: grid;
+    grid-template: 0.8fr 0.5fr 5fr 0.5fr / 1fr 3fr;
+    /* remember: 2 columns, 4 rows */
+    grid-template-areas: "header header"
+                         "sidebar nav"
+                         "sidebar article"
+                         "footer footer";
+    gap: 4px;
+}
+
+/* ----------------------- HEADER STUFF ------------------------------------- */
+
+#sidebar, #nav, #article, #footer {
+    text-align: center;
+}
+
+#header {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    /* padding: 10px; */
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-color: rgb(57,63,77);
+    justify-content:space-between;
+}
+
+.logo {
+    font-size: 25px;
+    text-align: left;
+}
+
+.menu {
+    justify-content: right;
+}
+
+.menu ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "h-one h-two h-three h-four";
+    list-style: none;
+    gap: 15px;
+}
+
+.menu-item {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.item-cont3 {
+    font-size: 20px;
+    color: white;
+}
+
+.header-item {
+    padding: 10px;
+}
+
+/* --------------------------------- SIDEBAR STUFF ----------------------------- */
+
+#sidebar {
+    display: grid;
+    padding: 10px;
+    grid-area: sidebar;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: rgb(255,119,85);
+    gap: 50px;
+    color: black;
+}
+
+#sidebar > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    text-align: center;
+}
+
+.photo {
+    border-radius: 8px;
+}
+
+.photo p {
+    padding: auto;
+}
+
+/* ------------------------------------- NAVBAR STUFF -------------------------------- */
+
+#nav {
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    grid-area: nav;
+    background-color: rgb(255,119,85);
+}
+
+#nav ul {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+}
+
+/* -------------------------------------------- ARTICLE STUFF ------------------------- */
+
+#article {
+    display: grid;
+    grid-area: article;
+    padding: 10px;
+    background-color: rgb(188,203,222);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+#article > div {
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+    padding: 20px;
+}
+
+.card {
+    height: 200px;
+}
+
+.paragraph {
+    margin-top: 5px;
+    text-align: left;
+}
+/* -------------------------------------------- FOOTER STUFF ------------------------- */
+
+#footer {
+    display: grid;
+    grid-area: footer;
+    background-color: rgb(57,63,77);
+}
+
+#footer p{
+    align-self: center;
+    justify-self: center;
+}

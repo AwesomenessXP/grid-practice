@@ -1,0 +1,14 @@
+.grid-container{
+    /* grid lines are created implicitly here */
+    margin-top: 30px;
+    display: inline-grid;
+    column-gap: 50px;
+    row-gap: 10px;
+    grid-template: 500px 75px 75px 75px 75px/ 500px 75px 75px 75px; /*means: rows / columns */
+}
+
+.item {
+    background-color: aqua;
+    border: 1px solid black;
+    font-size: 20px;
+}

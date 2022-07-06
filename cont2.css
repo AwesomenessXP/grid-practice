@@ -1,0 +1,30 @@
+.container-4 {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: repeat(2, min(200px, 50%));
+    grid-template-columns: repeat(5, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+/* using auto-fit makes the grid responsive without media queries!!  */
+
+.item-cont4 {
+    box-shadow: 0px 0px 4px 4px rgb(197, 70, 255);
+    height: 60px;
+}
+
+#one {
+    background-color: rgb(240,101,43);
+}
+
+#two {
+    background-color: rgb(140,189,0);
+}
+
+#three {
+    background-color: rgb(0,174,233);
+}
+
+#four {
+    background-color: rgb(247,189,0);
+}
